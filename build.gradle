@@ -1,0 +1,15 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+dependencies {
+    compile 'javax:javaee-api:7.0'
+    compile "org.springframework:spring-webmvc:4.2.5.RELEASE"
+}
+
+war {
+    baseName = 'hello'
+}
